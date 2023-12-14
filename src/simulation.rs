@@ -172,6 +172,9 @@ fn chain_id_to_fork_url(chain_id: u64) -> Result<String, Rejection> {
         // optimism
         10 => Ok("https://mainnet.optimism.io/".to_string()),
         420 => Ok("https://goerli.optimism.io/".to_string()),
+        // lumio
+        901 => Ok("https://devnet.lumio.io".to_string()),
+        9991 => Ok("https://testnet.lumio.io".to_string()),
         _ => Err(NoURLForChainIdError.into()),
     }
 }
