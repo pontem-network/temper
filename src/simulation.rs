@@ -149,7 +149,7 @@ impl<'de> Deserialize<'de> for PermissiveUint {
 fn chain_id_to_fork_url(chain_id: u64) -> Result<String, Rejection> {
     match chain_id {
         // ethereum
-        1 => Ok("https://mainnet.infura.io/v3/1e4b56ea3f614db99ad4c551cb4fde40".to_string()),
+        1 => Ok("https://infura.pontem.network".to_string()),
         5 => Ok("https://goerli.infura.io/v3/1e4b56ea3f614db99ad4c551cb4fde40".to_string()),
         11155111 => Ok("https://sepolia.infura.io/v3/1e4b56ea3f614db99ad4c551cb4fde40".to_string()),
         // polygon
