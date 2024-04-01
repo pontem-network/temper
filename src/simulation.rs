@@ -177,6 +177,7 @@ fn chain_id_to_fork_url(chain_id: u64) -> Result<String, Rejection> {
         9990 => Ok("https://testnet.lumio.io".to_string()),
         8453 => Ok("https://base.proxy.pontem.network".to_string()),
         25 => Ok("https://cronos.proxy.pontem.network".to_string()),
+        8866 => Ok("https://mainnet.lumio.io".to_string()),
         _ => Err(NoURLForChainIdError.into()),
     }
 }
